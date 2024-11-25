@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --main-color: #252734;
+    --secondaryColor: #333646;
+    --acsentColor: #ff9100;
+}
+
+body {
+    background-color: var(--main-color);
+    min-height: 900px;
+    font-family: 'ubuntu', sans-serif;
+    padding-top: 80px;
+    /* Sesuaikan dengan tinggi navbar */
+}
+
+
+section h1 {
+    color: #ffff;
+    font-size: 2.5rem;
+}
+
+.social-icon svg {
+    margin-right: .7em;
+    margin-bottom: 10px;
+}
+
+.social-icon-footer svg {
+    margin-right: .7em;
+    margin-bottom: 10px;
+}
+
+/* Navbar Awal */
+
+/* .nav-dark {
+    background-color: var(--secondaryColor) !important;
+} */
+
+.nav-link.active {
+    color: var(--acsentColor) !important;
+    font-weight: 500;
+}
+
+/* Navbae Akhir */
+
+/* Hero Section Awal*/
+
+.color-acsent {
+    color: var(--acsentColor);
+}
+
+#hero {
+    color: #ffff;
+    min-height: 100vh;
+    margin-top: 10rem;
+}
+
+#hero h2 {
+    font-weight: 300;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+/* CTA */
+.btn-custom1 {
+    background-color: var(--acsentColor);
+    text-align: center;
+    color: #fff;
+    min-width: 150px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 15px;
+}
+
+.btn-custom1:hover {
+    box-shadow: 0 0 5px rgba(255, 166, 0, .8);
+}
+
+.cv {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.social-icon svg {
+    margin-right: .7em;
+    margin-bottom: 10px;
+}
+
+/* Hero Section Akhir */
+
+
+/* About Section Awal */
+
+hr {
+    width: 35%;
+    height: 5px;
+    color: var(--acsentColor);
+    margin: 0 auto;
+    opacity: 100%;
+}
+
+#about {
+    min-height: 300px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* About Section Akhir */
+
+
+/* Skill Section Awal */
+
+#skill {
+    min-height: 710px;
+    color: #fff;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#skill img {
+    width: 15%;
+    margin: 10px;
+}
+
+#skill .card {
+    background-color: #414558;
+    height: 340px;
+}
+
+/* Skill Section Akhir */
+
+
+/* Sertifikat Section Awal */
+
+#sertifikat {
+    margin-top: -170px;
+    background-color: var(--secondaryColor);
+    padding: 270px;
+    padding-bottom: 80px;
+}
+
+#sertifikat p,
+a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+#sertifikat img {
+    width: 49%;
+    padding: 10px;
+}
+
+/* Sertifikat Section Akhir */
+
+
+/* Portofolio Section Awal */
+
+#portofolio .container {
+    padding: 80px 10px;
+}
+
+/* Portofolio Section Akhir */
+
+/* Kontak Section Awal */
+
+#contact {
+    background-color: #fff;
+    padding: 60px 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: #414558;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #ffb347;
+}
+
+
+/* Kontak Section Akhir */
+
+
+/* Media Query  */
+
+/* Media Query untuk Tablet */
+@media (max-width: 768px) {
+    #hero {
+        margin-top: 5rem;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    #skill img {
+        width: 25%;
+    }
+
+    #sertifikat img {
+        width: 100%;
+    }
+
+    .btn-custom1 {
+        min-width: 120px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* Media Query untuk Smartphone */
+@media (max-width: 576px) {
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+
+    #hero p {
+        font-size: 0.9rem;
+    }
+
+    #about hr {
+        width: 50%;
+    }
+
+    #skill img {
+        width: 40%;
+    }
+
+    #sertifikat {
+        padding: 150px 20px;
+    }
+
+    #sertifikat img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn-custom1 {
+        font-size: 0.9rem;
+        height: 35px;
+    }
+}
